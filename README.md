@@ -20,7 +20,7 @@ module: {
       // using .ractive.html for your components gives you good
       // syntax highlighting with most editors
       test: /\.ractive\.html$/,
-      loaders: 'ractive-bin'
+      loaders: 'ractive-bin-loader'
     }
   ]
 }
@@ -41,7 +41,7 @@ Then you can write components like this:
   }
 </style>
 
-<script type="text/ractive" id="my-partial">
+<script type="text/ractive" id="myPartial">
   <p>
     Partials can be added as scripts with a type of text/ractive or text/html.
   </p>
@@ -52,7 +52,7 @@ Then you can write components like this:
 
 <!-- any html is gathered up to be parsed and injected wherever $TEMPLATE is found in the script -->
 <div class="my-ractive-component">
-  {{>my-partial}}
+  {{>myPartial}}
   <button on-click="['go']">Go</button>
 </div>
 

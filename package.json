@@ -1,6 +1,6 @@
 {
   "name": "ractive-bin-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "build Ractive.js components using the library behind the ractive bin",
   "main": "index.js",
   "author": "Chris Reeves <evschris@gmail.com>",
