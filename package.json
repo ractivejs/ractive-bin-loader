@@ -1,0 +1,22 @@
+{
+  "name": "ractive-bin-loader",
+  "version": "1.0.0",
+  "description": "build Ractive.js components using the library behind the ractive bin",
+  "main": "index.js",
+  "author": "Chris Reeves <evschris@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ractivejs/ractive-bin-loader.git"
+  },
+  "keywords": [
+    "ractive", "webpack", "loader"
+  ],
+  "bugs": {
+    "url": "https://github.com/ractivejs/ractive-bin-loader"
+  },
+  "peerDependencies": {
+    "ractive": ">= 0.9",
+    "webpack": ">= 2"
+  }
+}
