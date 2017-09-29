@@ -7,9 +7,10 @@ module.exports = function(source) {
   this.async();
 
   function readFile(file) {
-    self.addDependency(path.join(self.context, file));
+    var f = path.join(self.context, file);
+    self.addDependency(f);
     return new Promise((ok, fail) => {
-      fs.readFile(file, { encoding: 'utf8' }, function(err, data) {
+      fs.readFile(f, { encoding: 'utf8' }, function(err, data) {
         if (err) return fail(err);
         ok(data);
       });
